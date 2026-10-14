@@ -3,417 +3,1888 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="J&D Investment Centre - Mutual Funds, SIP, Insurance and Financial Goal Planning by Dipesh Patel, Kudasan, Gandhinagar.">
-<title>J&D Investment Centre | Dipesh Patel</title>
+
+<title>J&D Investment Centre | Mutual Funds, SIP & Insurance</title>
+
+<meta name="description" content="J&D Investment Centre - Mutual Funds, SIP, Insurance, Financial Planning and Wealth Management in Gandhinagar.">
+
 <style>
 :root{
-  --navy:#0b2d5c;
-  --blue:#1266b1;
-  --sky:#29a9e8;
-  --orange:#f58220;
-  --gold:#e7ad35;
-  --light:#f5f9fd;
-  --white:#fff;
-  --text:#203047;
-  --muted:#63748a;
-  --border:#dfe8f1;
-  --green:#16834b;
-  --shadow:0 12px 35px rgba(11,45,92,.10);
+  --blue:#063b78;
+  --blue2:#0b5cad;
+  --orange:#f28c28;
+  --light:#f5f8fc;
+  --dark:#172033;
+  --white:#ffffff;
+  --green:#16a34a;
+  --shadow:0 8px 25px rgba(0,0,0,.10);
 }
-*{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--border);backdrop-filter:blur(8px)}
-.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px}
-.logo-mark{width:58px;height:58px;flex:none}
-.brand-title{font-weight:800;color:var(--navy);font-size:20px;line-height:1.05}
-.brand-title span{color:var(--orange)}
-.brand-sub{font-size:10px;letter-spacing:1.5px;color:var(--blue);font-weight:700;margin-top:3px}
-.brand-tag{font-size:10px;color:var(--muted)}
-.navlinks{display:flex;gap:22px;font-size:14px;font-weight:700;color:var(--navy)}
-.navlinks a:hover{color:var(--orange)}
-.nav-actions{display:flex;gap:8px}
-.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:11px 17px;font-weight:800;border:1px solid transparent;cursor:pointer}
-.btn-primary{background:var(--navy);color:#fff}
-.btn-orange{background:var(--orange);color:#fff}
-.btn-outline{border-color:var(--blue);color:var(--blue);background:#fff}
-.hero{background:linear-gradient(135deg,#f6fbff 0%,#eef6ff 55%,#fff7ef 100%);padding:78px 0 65px;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
-.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:#eaf5ff;color:var(--blue);font-weight:800;font-size:13px}
-h1{font-size:clamp(38px,6vw,64px);line-height:1.05;color:var(--navy);margin:18px 0 16px}
-h1 span{color:var(--orange)}
-.hero p{font-size:18px;color:var(--muted);max-width:650px}
-.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.hero-card{background:#fff;border:1px solid var(--border);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
-.growth{height:210px;position:relative;overflow:hidden;border-radius:18px;background:linear-gradient(180deg,#eff8ff,#fff)}
-.growth svg{width:100%;height:100%}
-.hero-mini{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
-.mini{padding:14px;border-radius:14px;background:var(--light);border:1px solid var(--border)}
-.mini strong{display:block;color:var(--navy);font-size:20px}
-section{padding:72px 0}
-.section-head{text-align:center;margin-bottom:35px}
-.section-head h2{font-size:36px;color:var(--navy);margin:0 0 8px}
-.section-head p{color:var(--muted);margin:auto;max-width:700px}
-.services{background:#f8fbfe}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:25px;box-shadow:0 7px 22px rgba(11,45,92,.05)}
-.card-icon{font-size:30px}
-.card h3{color:var(--navy);margin:10px 0 5px}
-.card p{color:var(--muted);margin:0}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:28px}
-.stat{text-align:center;background:#fff;border:1px solid var(--border);border-radius:15px;padding:20px}
-.stat strong{font-size:28px;color:var(--orange);display:block}
-.stat span{font-size:13px;color:var(--muted);font-weight:700}
-.calc-section{background:#fff}
-.calc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.calc{border:1px solid var(--border);border-radius:20px;padding:24px;background:#fff;box-shadow:var(--shadow)}
-.calc h3{margin:0 0 4px;color:var(--navy)}
-.calc .small{color:var(--muted);font-size:13px;margin-bottom:18px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-label{font-size:13px;font-weight:800;color:#34475f}
-input{width:100%;padding:12px;border:1px solid #cdd9e5;border-radius:9px;margin-top:5px;font-size:15px;outline:none}
-input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(18,102,177,.10)}
-.calc button{margin-top:15px;width:100%}
-.result{margin-top:15px;padding:16px;border-radius:12px;background:#f1f8ff;border-left:4px solid var(--blue)}
-.result strong{color:var(--navy);font-size:24px}
-.result div{color:var(--muted);font-size:13px}
-.note{font-size:12px;color:var(--muted);margin-top:20px;text-align:center}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}
-.about-box{background:var(--light);border-radius:20px;padding:30px;border:1px solid var(--border)}
-.about-box h3{color:var(--navy)}
-.checks{padding:0;list-style:none}
-.checks li{margin:12px 0}
-.checks li:before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}
-.office{background:linear-gradient(135deg,var(--navy),#123f79);color:#fff}
-.office-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.office h2{font-size:38px;margin:0 0 15px}
-.address{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:25px;border-radius:18px}
-.address p{margin:7px 0}
-.address strong{color:#fff}
-.office .btn-outline{background:#fff;border-color:#fff;color:var(--navy)}
-.cta{background:#fff7ef}
-.cta-box{background:#fff;border:1px solid #f3d7bd;border-radius:22px;padding:35px;display:flex;justify-content:space-between;align-items:center;gap:20px}
-.cta-box h2{color:var(--navy);margin:0 0 5px}
-footer{background:#071f40;color:#dbe8f6;padding:30px 0}
-.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.footer-brand{font-weight:800;color:#fff}
-.disclaimer{font-size:11px;color:#9fb2c8;max-width:800px;margin-top:12px}
-@media(max-width:850px){
-  .navlinks{display:none}
-  .hero-grid,.about-grid,.office-grid{grid-template-columns:1fr}
-  .cards{grid-template-columns:1fr 1fr}
-  .calc-grid{grid-template-columns:1fr}
-  .stats{grid-template-columns:1fr 1fr}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
-@media(max-width:560px){
-  .nav{min-height:68px}
-  .logo-mark{width:48px;height:48px}
-  .brand-title{font-size:16px}
-  .brand-sub{font-size:8px}
-  .brand-tag{display:none}
-  .nav-actions .btn-outline{display:none}
-  .hero{padding:55px 0}
-  section{padding:55px 0}
-  .cards{grid-template-columns:1fr}
-  .stats{grid-template-columns:1fr 1fr}
-  .form-grid{grid-template-columns:1fr}
-  .cta-box{display:block}
-  .cta-box .hero-buttons{margin-top:18px}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--dark);
+  background:#fff;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:92%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* HEADER */
+header{
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:999;
+  box-shadow:0 2px 12px rgba(0,0,0,.10);
+}
+
+.header-inner{
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo-mark{
+  width:54px;
+  height:54px;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--blue),var(--blue2));
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  font-weight:900;
+  position:relative;
+}
+
+.logo-mark:after{
+  content:"";
+  position:absolute;
+  width:16px;
+  height:5px;
+  background:var(--orange);
+  bottom:9px;
+  border-radius:5px;
+}
+
+.logo-text strong{
+  display:block;
+  color:var(--blue);
+  font-size:20px;
+  line-height:1.1;
+}
+
+.logo-text span{
+  color:var(--orange);
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+nav{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+
+nav a{
+  font-size:14px;
+  font-weight:bold;
+  color:#25364d;
+}
+
+nav a:hover{
+  color:var(--orange);
+}
+
+.nav-btn{
+  background:var(--orange);
+  color:#fff!important;
+  padding:10px 15px;
+  border-radius:8px;
+}
+
+.menu-btn{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  background:
+  linear-gradient(120deg,rgba(3,43,88,.96),rgba(10,93,173,.92));
+  color:#fff;
+  padding:75px 0;
+  overflow:hidden;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:45px;
+  align-items:center;
+}
+
+.hero h1{
+  font-size:48px;
+  line-height:1.12;
+  margin-bottom:18px;
+}
+
+.hero h1 span{
+  color:#ffad45;
+}
+
+.hero p{
+  font-size:18px;
+  max-width:700px;
+  color:#eaf3ff;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 20px;
+  border-radius:9px;
+  font-weight:bold;
+  border:none;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.btn-orange{
+  background:var(--orange);
+  color:#fff;
+}
+
+.btn-white{
+  background:#fff;
+  color:var(--blue);
+}
+
+.btn-green{
+  background:var(--green);
+  color:#fff;
+}
+
+.hero-card{
+  background:#fff;
+  color:var(--dark);
+  border-radius:20px;
+  padding:28px;
+  box-shadow:0 20px 45px rgba(0,0,0,.22);
+}
+
+.hero-card h3{
+  color:var(--blue);
+  margin-bottom:10px;
+  font-size:24px;
+}
+
+.hero-card .line{
+  height:3px;
+  width:55px;
+  background:var(--orange);
+  margin:10px 0 18px;
+}
+
+.hero-card p{
+  color:#536174;
+  font-size:15px;
+  margin-bottom:10px;
+}
+
+.address{
+  font-size:14px;
+}
+
+/* TICKER */
+.ticker{
+  background:#fff7ed;
+  border-bottom:1px solid #ffd7a8;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.ticker-track{
+  display:inline-block;
+  padding:11px 0;
+  animation:scroll 22s linear infinite;
+  color:var(--blue);
+  font-weight:bold;
+}
+
+.ticker-track span{
+  margin:0 50px;
+}
+
+@keyframes scroll{
+  from{transform:translateX(100%);}
+  to{transform:translateX(-100%);}
+}
+
+/* SECTION */
+section{
+  padding:65px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:38px;
+}
+
+.section-title h2{
+  color:var(--blue);
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.section-title p{
+  color:#697586;
+}
+
+/* STATS */
+.stats{
+  background:var(--light);
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.stat{
+  background:#fff;
+  padding:28px 15px;
+  text-align:center;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+}
+
+.stat strong{
+  display:block;
+  font-size:30px;
+  color:var(--blue);
+}
+
+.stat span{
+  color:#657286;
+  font-size:14px;
+}
+
+/* SERVICES */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.service-card{
+  background:#fff;
+  border-radius:16px;
+  padding:25px;
+  box-shadow:var(--shadow);
+  border-top:4px solid var(--orange);
+  transition:.2s;
+}
+
+.service-card:hover{
+  transform:translateY(-5px);
+}
+
+.service-icon{
+  font-size:35px;
+  margin-bottom:10px;
+}
+
+.service-card h3{
+  color:var(--blue);
+  margin-bottom:8px;
+}
+
+.service-card p{
+  color:#697586;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+/* CALCULATORS */
+.calculator-section{
+  background:var(--light);
+}
+
+.calc-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.calc-card{
+  background:#fff;
+  padding:24px;
+  border-radius:15px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+
+.calc-card h3{
+  color:var(--blue);
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.calc-card p{
+  color:#687386;
+  font-size:14px;
+  min-height:68px;
+}
+
+.calc-card button{
+  margin-top:15px;
+  width:100%;
+}
+
+/* EVENTS */
+.events{
+  background:linear-gradient(135deg,#eef6ff,#fff8ef);
+}
+
+.events-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.event-card{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:var(--shadow);
+}
+
+.event-card h3{
+  color:var(--blue);
+  margin-bottom:8px;
+}
+
+.event-card p{
+  color:#64748b;
+  margin-bottom:18px;
+}
+
+/* YOUTUBE */
+.youtube-section{
+  background:#fff;
+}
+
+.video-row{
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+  padding:10px 2px 18px;
+}
+
+.video-card{
+  min-width:280px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+.video-card .video-top{
+  height:155px;
+  background:linear-gradient(135deg,#061f40,#0b5cad);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:55px;
+}
+
+.video-card .video-content{
+  padding:17px;
+}
+
+.video-card h4{
+  color:var(--blue);
+}
+
+/* OFFICE */
+.office{
+  background:var(--light);
+}
+
+.office-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.office-card{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:var(--shadow);
+}
+
+.office-card h3{
+  color:var(--blue);
+  margin-bottom:12px;
+}
+
+.office-card p{
+  color:#59677a;
+}
+
+/* MODAL */
+.modal{
+  display:none;
+  position:fixed;
+  z-index:2000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.65);
+  overflow:auto;
+  padding:25px 10px;
+}
+
+.modal.show{
+  display:block;
+}
+
+.modal-box{
+  background:#fff;
+  width:95%;
+  max-width:620px;
+  margin:30px auto;
+  border-radius:18px;
+  padding:28px;
+  position:relative;
+  box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+
+.modal-close{
+  position:absolute;
+  right:18px;
+  top:10px;
+  font-size:30px;
+  cursor:pointer;
+  color:#6b7280;
+}
+
+.modal-box h2{
+  color:var(--blue);
+  margin-bottom:5px;
+}
+
+.modal-sub{
+  color:#6b7280;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+}
+
+.form-group{
+  margin-bottom:12px;
+}
+
+.form-group.full{
+  grid-column:1/-1;
+}
+
+label{
+  display:block;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:5px;
+  color:#344054;
+}
+
+input,select,textarea{
+  width:100%;
+  padding:11px 12px;
+  border:1px solid #d5dbe5;
+  border-radius:8px;
+  outline:none;
+  font-family:inherit;
+}
+
+input:focus,select:focus,textarea:focus{
+  border-color:var(--blue2);
+}
+
+textarea{
+  min-height:90px;
+  resize:vertical;
+}
+
+.result{
+  background:#eff8ff;
+  border:1px solid #b8dcff;
+  padding:18px;
+  border-radius:10px;
+  margin-top:15px;
+}
+
+.result strong{
+  color:var(--blue);
+  font-size:20px;
+}
+
+.small-note{
+  font-size:11px;
+  color:#7b8492;
+  margin-top:12px;
+}
+
+/* FOOTER */
+footer{
+  background:#061f40;
+  color:#dce9f7;
+  padding:45px 0 20px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr;
+  gap:30px;
+}
+
+footer h3{
+  color:#fff;
+  margin-bottom:12px;
+}
+
+footer p,footer a{
+  color:#c5d3e3;
+  font-size:14px;
+}
+
+.footer-bottom{
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.15);
+  margin-top:30px;
+  padding-top:18px;
+  font-size:12px;
+  color:#aabbd0;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  nav{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:78px;
+    background:#fff;
+    flex-direction:column;
+    align-items:stretch;
+    padding:18px;
+    box-shadow:0 8px 15px rgba(0,0,0,.12);
+  }
+
+  nav.open{
+    display:flex;
+  }
+
+  nav a{
+    padding:10px;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .stats-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .services-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .calc-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .header-inner{
+    min-height:70px;
+  }
+
+  .logo-mark{
+    width:45px;
+    height:45px;
+    font-size:20px;
+  }
+
+  .logo-text strong{
+    font-size:16px;
+  }
+
+  .hero{
+    padding:50px 0;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  section{
+    padding:48px 0;
+  }
+
+  .section-title h2{
+    font-size:27px;
+  }
+
+  .stats-grid,
+  .services-grid,
+  .calc-grid,
+  .events-grid,
+  .office-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .form-group.full{
+    grid-column:auto;
+  }
+
+  .modal-box{
+    padding:22px 16px;
+  }
 }
 </style>
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header>
-  <div class="container nav">
-    <a class="brand" href="#home" aria-label="J&D Investment Centre">
-      <svg class="logo-mark" viewBox="0 0 100 100" role="img" aria-label="J&D logo">
-        <path d="M18 39 L50 12 L82 39" fill="none" stroke="#f58220" stroke-width="8" stroke-linecap="round"/>
-        <path d="M28 38 V76 H72 V38" fill="none" stroke="#1266b1" stroke-width="8"/>
-        <path d="M39 76 V47 H55 C72 47 75 58 75 63 C75 72 67 76 55 76 H39Z" fill="none" stroke="#0b2d5c" stroke-width="6"/>
-        <path d="M18 79 C35 68 47 67 61 75 C69 80 78 82 88 76" fill="none" stroke="#f58220" stroke-width="6" stroke-linecap="round"/>
-      </svg>
-      <div>
-        <div class="brand-title">J <span>&amp;</span> D</div>
-        <div class="brand-sub">INVESTMENT CENTRE</div>
-        <div class="brand-tag">Invest Today • Grow Tomorrow</div>
-      </div>
-    </a>
-    <nav class="navlinks">
-      <a href="#services">Services</a>
-      <a href="#calculators">Calculators</a>
-      <a href="#about">About</a>
-      <a href="#office">Contact</a>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn btn-outline" href="tel:+919624550101">Call</a>
-      <a class="btn btn-orange" target="_blank" href="https://wa.me/919624550101?text=Hello%20J%26D%20Investment%20Centre%2C%20I%20would%20like%20to%20discuss%20my%20investment%20plan.">WhatsApp</a>
-    </div>
+<div class="container header-inner">
+
+<a href="#home" class="logo">
+  <div class="logo-mark">J&D</div>
+  <div class="logo-text">
+    <strong>J & D</strong>
+    <span>INVESTMENT CENTRE</span>
   </div>
+</a>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<nav id="mainNav">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#calculators" onclick="closeMenu()">Calculators</a>
+  <a href="#events" onclick="closeMenu()">Events</a>
+  <a href="#youtube" onclick="closeMenu()">YouTube</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a class="nav-btn" href="tel:+919624550101">Call Now</a>
+</nav>
+
+</div>
 </header>
 
-<main id="home">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="badge">J&amp;D Investment Centre • Dipesh Patel</span>
-      <h1>Secure Life with <span>Easy Steps.</span></h1>
-      <p>Helping individuals and families understand Mutual Funds, SIP, Insurance and financial goals — with a simple, long-term planning approach.</p>
-      <div class="hero-buttons">
-        <a class="btn btn-primary" href="#calculators">Try Calculators</a>
-        <a class="btn btn-orange" target="_blank" href="https://wa.me/919624550101?text=Hello%20Dipesh%20Patel%2C%20I%20would%20like%20to%20discuss%20my%20financial%20goals.">Chat on WhatsApp</a>
-        <a class="btn btn-outline" href="tel:+919624550101">Call 96245 50101</a>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="growth">
-        <svg viewBox="0 0 600 240" preserveAspectRatio="none">
-          <path d="M0 205 C90 190 100 170 165 178 C220 184 238 132 300 145 C360 157 380 98 425 110 C480 125 500 58 600 32" fill="none" stroke="#1266b1" stroke-width="7"/>
-          <path d="M0 205 C90 190 100 170 165 178 C220 184 238 132 300 145 C360 157 380 98 425 110 C480 125 500 58 600 32 L600 240 L0 240Z" fill="rgba(18,102,177,.08)"/>
-          <path d="M525 45 L600 32 L585 70" fill="none" stroke="#f58220" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
-      <div class="hero-mini">
-        <div class="mini"><strong>20+ Years</strong><span>Experience</span></div>
-        <div class="mini"><strong>4500+ Families</strong><span>Served</span></div>
-        <div class="mini"><strong>75+ Awards</strong><span>Recognition</span></div>
-        <div class="mini"><strong>₹65 Cr+</strong><span>AUM*</span></div>
-      </div>
-    </div>
+<!-- TICKER -->
+<div class="ticker">
+<div class="ticker-track">
+<span>📢 Seminar Event 2026 — Limited Seats Available</span>
+<span>📈 Start Your SIP • Plan Your Goals • Build Your Wealth</span>
+<span>🛡️ Mutual Fund • Insurance • Financial Planning • Wealth Management</span>
+</div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container hero-grid">
+
+<div>
+  <div style="color:#ffb35c;font-weight:bold;margin-bottom:8px;">
+    J&D INVESTMENT CENTRE
   </div>
+
+  <h1>Secure Life with <span>Easy Steps.</span></h1>
+
+  <p>
+    Mutual Funds, SIP, Insurance, Financial Planning and Wealth Management —
+    helping families make disciplined financial decisions for their future.
+  </p>
+
+  <div class="hero-buttons">
+    <a class="btn btn-orange" href="#services">Explore Services</a>
+    <a class="btn btn-white" href="tel:+919624550101">📞 Call 96245 50101</a>
+    <a class="btn btn-green" href="https://wa.me/919624550101" target="_blank">💬 WhatsApp</a>
+  </div>
+</div>
+
+<div class="hero-card">
+  <h3>J&D Investment Centre</h3>
+  <div class="line"></div>
+
+  <p><strong>Advisor:</strong> Dipesh Patel</p>
+
+  <p class="address">
+    Office/Shop No. 303, Third Floor,<br>
+    Ugati Corporate Park, Front of HDFC Bank,<br>
+    Black Pepper Hotel Road, Kudasan,<br>
+    Gandhinagar, Gujarat – 382421
+  </p>
+
+  <div style="margin-top:18px;">
+    <a class="btn btn-orange"
+       target="_blank"
+       href="https://www.google.com/maps/search/?api=1&query=J%26D%20Investment%20Centre%2C%20Ugati%20Corporate%20Park%2C%20Kudasan%2C%20Gandhinagar%2C%20Gujarat%20382421">
+       📍 Google Maps
+    </a>
+  </div>
+</div>
+
+</div>
 </section>
 
-<section id="services" class="services">
-  <div class="container">
-    <div class="section-head">
-      <h2>Our Services</h2>
-      <p>Solutions designed around your financial goals, protection needs and investment horizon.</p>
-    </div>
-    <div class="cards">
-      <div class="card"><div class="card-icon">📈</div><h3>Mutual Funds &amp; SIP</h3><p>Systematic and goal-oriented investment planning.</p></div>
-      <div class="card"><div class="card-icon">🛡️</div><h3>Life &amp; Term Insurance</h3><p>Protection planning for your family and financial responsibilities.</p></div>
-      <div class="card"><div class="card-icon">🏥</div><h3>Health Insurance</h3><p>Health-risk protection and insurance guidance.</p></div>
-      <div class="card"><div class="card-icon">🚗</div><h3>Motor Insurance</h3><p>Motor insurance assistance and renewal support.</p></div>
-      <div class="card"><div class="card-icon">🎯</div><h3>Financial Goal Planning</h3><p>Plan for education, retirement, wealth and other long-term goals.</p></div>
-      <div class="card"><div class="card-icon">📊</div><h3>IPO &amp; Market Information</h3><p>General market and IPO information for informed discussions.</p></div>
-    </div>
-    <div class="stats">
-      <div class="stat"><strong>20+</strong><span>Years Experience</span></div>
-      <div class="stat"><strong>4500+</strong><span>Families Served</span></div>
-      <div class="stat"><strong>75+</strong><span>Awards</span></div>
-      <div class="stat"><strong>₹65 Cr+</strong><span>AUM*</span></div>
-    </div>
-  </div>
+<!-- STATS -->
+<section class="stats">
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat">
+<strong>20+</strong>
+<span>Years Experience</span>
+</div>
+
+<div class="stat">
+<strong>4500+</strong>
+<span>Families Served</span>
+</div>
+
+<div class="stat">
+<strong>75+</strong>
+<span>Awards</span>
+</div>
+
+<div class="stat">
+<strong>₹70 Cr+</strong>
+<span>AUM*</span>
+</div>
+
+</div>
+
+</div>
 </section>
 
-<section id="calculators" class="calc-section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Investment Calculators</h2>
-      <p>Use these calculators for quick mathematical illustrations of long-term investment scenarios.</p>
-    </div>
+<!-- SERVICES -->
+<section id="services">
+<div class="container">
 
-    <div class="calc-grid">
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Solutions designed around your financial goals.</p>
+</div>
 
-      <div class="calc">
-        <h3>1. Goal-Based SIP Calculator</h3>
-        <div class="small">Estimate the monthly SIP required to target a future amount.</div>
-        <div class="form-grid">
-          <label>Goal Amount (₹)<input id="goal" type="number" value="10000000" min="1"></label>
-          <label>Years<input id="goalYears" type="number" value="15" min="1"></label>
-          <label>Expected Return (% p.a.)<input id="goalRate" type="number" value="12" step="0.1" min="0"></label>
-          <label>Current Savings (₹)<input id="goalCurrent" type="number" value="0" min="0"></label>
-        </div>
-        <button class="btn btn-primary" onclick="goalSIP()">Calculate Required SIP</button>
-        <div class="result" id="goalResult">Enter details and click calculate.</div>
-      </div>
+<div class="services-grid">
 
-      <div class="calc">
-        <h3>2. Simple SIP Calculator</h3>
-        <div class="small">Estimate future value of a fixed monthly SIP.</div>
-        <div class="form-grid">
-          <label>Monthly SIP (₹)<input id="sip" type="number" value="10000" min="1"></label>
-          <label>Years<input id="sipYears" type="number" value="20" min="1"></label>
-          <label>Expected Return (% p.a.)<input id="sipRate" type="number" value="12" step="0.1" min="0"></label>
-        </div>
-        <button class="btn btn-primary" onclick="simpleSIP()">Calculate Future Value</button>
-        <div class="result" id="sipResult">Enter details and click calculate.</div>
-      </div>
+<div class="service-card">
+<div class="service-icon">📈</div>
+<h3>Mutual Fund & SIP</h3>
+<p>Build long-term wealth through disciplined and goal-oriented investing.</p>
+<button class="btn btn-orange" onclick="openModal('mfModal')">Enquire Now →</button>
+</div>
 
-      <div class="calc">
-        <h3>3. SIP + Lumpsum Calculator</h3>
-        <div class="small">Combine an initial lumpsum with a monthly SIP.</div>
-        <div class="form-grid">
-          <label>Lumpsum (₹)<input id="lump" type="number" value="500000" min="0"></label>
-          <label>Monthly SIP (₹)<input id="mixSip" type="number" value="10000" min="0"></label>
-          <label>Years<input id="mixYears" type="number" value="20" min="1"></label>
-          <label>Expected Return (% p.a.)<input id="mixRate" type="number" value="12" step="0.1" min="0"></label>
-        </div>
-        <button class="btn btn-primary" onclick="mixCalc()">Calculate Future Value</button>
-        <div class="result" id="mixResult">Enter details and click calculate.</div>
-      </div>
+<div class="service-card">
+<div class="service-icon">🛡️</div>
+<h3>Health Insurance</h3>
+<p>Plan suitable health protection for yourself and your family.</p>
+<button class="btn btn-orange" onclick="openModal('healthModal')">Enquire Now →</button>
+</div>
 
-      <div class="calc">
-        <h3>4. Lumpsum + SIP + Top-Up SIP</h3>
-        <div class="small">Illustrate a SIP that increases once every year.</div>
-        <div class="form-grid">
-          <label>Lumpsum (₹)<input id="topLump" type="number" value="500000" min="0"></label>
-          <label>Starting SIP (₹)<input id="topSip" type="number" value="10000" min="0"></label>
-          <label>Years<input id="topYears" type="number" value="20" min="1"></label>
-          <label>Expected Return (% p.a.)<input id="topRate" type="number" value="12" step="0.1" min="0"></label>
-          <label>Annual Top-Up (%)<input id="topUp" type="number" value="10" step="0.1" min="0"></label>
-        </div>
-        <button class="btn btn-primary" onclick="topUpCalc()">Calculate Future Value</button>
-        <div class="result" id="topResult">Enter details and click calculate.</div>
-      </div>
+<div class="service-card">
+<div class="service-icon">🚗</div>
+<h3>Motor Insurance</h3>
+<p>Get assistance for vehicle insurance renewal and suitable cover options.</p>
+<button class="btn btn-orange" onclick="openModal('motorModal')">Enquire Now →</button>
+</div>
 
-    </div>
-    <div class="note">Illustrations are mathematical calculations only. Mutual fund returns are market-linked and not guaranteed. Actual returns can differ. Past performance does not guarantee future returns. Taxes, loads and other charges are not included.</div>
-  </div>
+<div class="service-card">
+<div class="service-icon">❤️</div>
+<h3>Life & Term Insurance</h3>
+<p>Protect your family's financial future with appropriate life protection.</p>
+<button class="btn btn-orange" onclick="openModal('lifeModal')">Enquire Now →</button>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🎯</div>
+<h3>Financial Goal Planning</h3>
+<p>Plan for retirement, education, home purchase, marriage and wealth creation.</p>
+<button class="btn btn-orange" onclick="openModal('goalModal')">Enquire Now →</button>
+</div>
+
+<div class="service-card">
+<div class="service-icon">💹</div>
+<h3>IPO & Market Information</h3>
+<p>Get general information and guidance related to IPOs and market opportunities.</p>
+<button class="btn btn-orange" onclick="openModal('ipoModal')">Enquire Now →</button>
+</div>
+
+</div>
+</div>
 </section>
 
-<section id="about">
-  <div class="container">
-    <div class="section-head">
-      <h2>About J&amp;D Investment Centre</h2>
-      <p>Simple conversations. Clear planning. Long-term financial thinking.</p>
-    </div>
-    <div class="about-grid">
-      <div class="about-box">
-        <h3>Dipesh Patel</h3>
-        <p>J&amp;D Investment Centre helps clients understand investment, insurance and financial-planning concepts and work towards their financial goals.</p>
-        <ul class="checks">
-          <li>Goal-oriented investment discussions</li>
-          <li>SIP and Mutual Fund planning</li>
-          <li>Insurance and protection planning</li>
-          <li>Long-term financial goal planning</li>
-        </ul>
-      </div>
-      <div class="about-box">
-        <h3>Our Approach</h3>
-        <p><strong>Plan → Invest → Review → Grow</strong></p>
-        <p>We focus on understanding the objective, time horizon and available investment amount before discussing suitable financial solutions.</p>
-        <p style="color:var(--muted);font-size:13px">Investment values can fluctuate. Product suitability and risk should be evaluated before investing.</p>
-      </div>
-    </div>
-  </div>
+<!-- CALCULATORS -->
+<section class="calculator-section" id="calculators">
+<div class="container">
+
+<div class="section-title">
+<h2>Financial Calculators</h2>
+<p>Use these calculators for mathematical investment illustrations.</p>
+</div>
+
+<div class="calc-grid">
+
+<div class="calc-card">
+<h3>Simple SIP Calculator</h3>
+<p>Estimate the future value of your monthly SIP investment.</p>
+<button class="btn btn-orange" onclick="openCalc('sip')">Open Calculator →</button>
+</div>
+
+<div class="calc-card">
+<h3>SIP + Lumpsum</h3>
+<p>Calculate a combination of monthly SIP and initial lumpsum.</p>
+<button class="btn btn-orange" onclick="openCalc('combo')">Open Calculator →</button>
+</div>
+
+<div class="calc-card">
+<h3>SIP + Lumpsum + Top-up</h3>
+<p>See how annual SIP increases can impact long-term wealth.</p>
+<button class="btn btn-orange" onclick="openCalc('topup')">Open Calculator →</button>
+</div>
+
+<div class="calc-card">
+<h3>Goal-Based SIP</h3>
+<p>Calculate the approximate SIP required to achieve a target goal.</p>
+<button class="btn btn-orange" onclick="openCalc('goal')">Open Calculator →</button>
+</div>
+
+</div>
+</div>
 </section>
 
-<section id="office" class="office">
-  <div class="container office-grid">
-    <div>
-      <h2>Visit Our Office</h2>
-      <p>Meet Dipesh Patel at J&amp;D Investment Centre, Kudasan, Gandhinagar.</p>
-      <div class="hero-buttons">
-        <a class="btn btn-orange" href="tel:+919624550101">📞 Call Now</a>
-        <a class="btn btn-outline" target="_blank" href="https://wa.me/919624550101?text=Hello%20J%26D%20Investment%20Centre%2C%20I%20would%20like%20to%20visit%20your%20office.">💬 WhatsApp</a>
-        <a class="btn btn-outline" target="_blank" href="https://www.google.com/maps/search/?api=1&query=J%26D%20Investment%20Centre%2C%20Ugati%20Corporate%20Park%2C%20Kudasan%2C%20Gandhinagar%2C%20Gujarat%20382421">📍 Google Maps</a>
-      </div>
-    </div>
-    <div class="address">
-      <p><strong>J&amp;D Investment Centre</strong></p>
-      <p>Office No. 303, Third Floor</p>
-      <p>Ugati Corporate Park, Front of HDFC Bank</p>
-      <p>Black Pepper Hotel Road</p>
-      <p>Kudasan, Gandhinagar, Gujarat – 382421</p>
-      <p>📞 <strong>96245 50101</strong></p>
-      <p>👤 Advisor: <strong>Dipesh Patel</strong></p>
-    </div>
-  </div>
+<!-- EVENTS -->
+<section class="events" id="events">
+<div class="container">
+
+<div class="section-title">
+<h2>Events & Community</h2>
+<p>Stay connected with J&D Investment Centre.</p>
+</div>
+
+<div class="events-grid">
+
+<div class="event-card">
+<h3>🎤 Seminar Event 2026</h3>
+<p>
+Join our insightful session on Mutual Funds and financial planning.
+Limited seats available.
+</p>
+
+<a class="btn btn-orange"
+   href="https://forms.gle/ibfvsYghGyjB1uNf6"
+   target="_blank">
+   Register for Seminar →
+</a>
+
+<p style="font-size:12px;margin-top:15px;">
+After registration, the details can be submitted through the Google Form.
+</p>
+</div>
+
+<div class="event-card">
+<h3>💬 Join Our WhatsApp Community</h3>
+<p>
+Receive financial education, market information, investment awareness
+and J&D Investment Centre updates.
+</p>
+
+<a class="btn btn-green"
+   href="https://chat.whatsapp.com/JqxVqcXabtv2mVCsn9l7eG"
+   target="_blank">
+   Join WhatsApp Community →
+</a>
+</div>
+
+</div>
+</div>
 </section>
 
-<section class="cta">
-  <div class="container">
-    <div class="cta-box">
-      <div>
-        <h2>Have a financial goal?</h2>
-        <p style="margin:0;color:var(--muted)">Start with a conversation about your goal, time horizon and investment plan.</p>
-      </div>
-      <div class="hero-buttons">
-        <a class="btn btn-primary" href="tel:+919624550101">Call Now</a>
-        <a class="btn btn-orange" target="_blank" href="https://wa.me/919624550101?text=Hello%20J%26D%20Investment%20Centre%2C%20I%20would%20like%20to%20discuss%20my%20financial%20goal.">WhatsApp</a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
+<!-- YOUTUBE -->
+<section class="youtube-section" id="youtube">
+<div class="container">
 
+<div class="section-title">
+<h2>J&D Investment Centre on YouTube</h2>
+<p>Financial education and investment awareness.</p>
+</div>
+
+<div class="video-row">
+
+<div class="video-card">
+<div class="video-top">▶</div>
+<div class="video-content">
+<h4>Mutual Fund & SIP Education</h4>
+<p style="font-size:13px;color:#687386;margin-top:5px;">
+Learn about investing, SIP and financial planning.
+</p>
+</div>
+</div>
+
+<div class="video-card">
+<div class="video-top">▶</div>
+<div class="video-content">
+<h4>Market & Investment Updates</h4>
+<p style="font-size:13px;color:#687386;margin-top:5px;">
+Important market and investment awareness updates.
+</p>
+</div>
+</div>
+
+<div class="video-card">
+<div class="video-top">▶</div>
+<div class="video-content">
+<h4>Financial Goal Planning</h4>
+<p style="font-size:13px;color:#687386;margin-top:5px;">
+Understand how to plan your financial goals.
+</p>
+</div>
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:15px;">
+<a class="btn btn-orange"
+   href="https://www.youtube.com/channel/UCbklY2SgLGDV4p-eoL54aZQ"
+   target="_blank">
+   ▶ Visit J&D YouTube Channel
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- OFFICE -->
+<section class="office" id="contact">
+<div class="container">
+
+<div class="section-title">
+<h2>Visit Our Office</h2>
+<p>We are available to discuss your financial goals.</p>
+</div>
+
+<div class="office-grid">
+
+<div class="office-card">
+<h3>📍 J&D Investment Centre</h3>
+
+<p>
+<strong>Office/Shop No. 303, Third Floor</strong><br>
+Ugati Corporate Park, Front of HDFC Bank<br>
+Black Pepper Hotel Road<br>
+Kudasan<br>
+Gandhinagar, Gujarat – 382421
+</p>
+
+<div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
+
+<a class="btn btn-orange" href="tel:+919624550101">
+📞 Call
+</a>
+
+<a class="btn btn-green" href="https://wa.me/919624550101" target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="btn btn-white"
+   style="border:1px solid #ddd;"
+   href="https://www.google.com/maps/search/?api=1&query=J%26D%20Investment%20Centre%2C%20Ugati%20Corporate%20Park%2C%20Kudasan%2C%20Gandhinagar%2C%20Gujarat%20382421"
+   target="_blank">
+📍 Maps
+</a>
+
+</div>
+</div>
+
+<div class="office-card">
+<h3>🤝 Why J&D?</h3>
+
+<p>
+✔ Goal-oriented financial planning<br><br>
+✔ Mutual Fund & SIP assistance<br><br>
+✔ Insurance planning support<br><br>
+✔ Family-focused wealth planning<br><br>
+✔ Long-term investment awareness<br><br>
+✔ Personalised client assistance
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">J&amp;D Investment Centre • Dipesh Patel</div>
-        <div>96245 50101 • Kudasan, Gandhinagar</div>
-      </div>
-      <div>© <span id="year"></span> J&amp;D Investment Centre</div>
-    </div>
-    <div class="disclaimer">
-      General information only. Mutual fund investments are subject to market risks. Read all scheme-related documents carefully before investing. Insurance and other financial products are subject to their respective terms and conditions. Calculators on this website provide mathematical illustrations and are not a guarantee of returns.
-    </div>
-  </div>
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+<h3>J&D Investment Centre</h3>
+<p>
+MUTUAL FUNDS | INSURANCE | FINANCIAL PLANNING | WEALTH MANAGEMENT
+</p>
+<p style="margin-top:10px;">
+Invest Today ▸ Grow Tomorrow
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<p><a href="#services">Services</a></p>
+<p><a href="#calculators">Calculators</a></p>
+<p><a href="#events">Events</a></p>
+<p><a href="#contact">Contact</a></p>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>Dipesh Patel</p>
+<p>📞 96245 50101</p>
+<p>📍 Gandhinagar, Gujarat</p>
+<p>💬 WhatsApp Available</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 J&D Investment Centre. All Rights Reserved.<br>
+*Figures are for information/illustration purposes. Mutual fund investments are subject to market risks.
+</div>
+
+</div>
 </footer>
 
+
+<!-- ================= CALCULATOR MODAL ================= -->
+
+<div class="modal" id="calculatorModal">
+<div class="modal-box">
+
+<span class="modal-close" onclick="closeModal('calculatorModal')">×</span>
+
+<h2 id="calcTitle">SIP Calculator</h2>
+<p class="modal-sub" id="calcDescription">
+Mathematical illustration only.
+</p>
+
+<div class="form-group">
+<label>Monthly SIP (₹)</label>
+<input type="number" id="calcSip" value="5000" min="0">
+</div>
+
+<div class="form-group" id="lumpsumGroup">
+<label>Initial Lumpsum (₹)</label>
+<input type="number" id="calcLumpsum" value="0" min="0">
+</div>
+
+<div class="form-group" id="topupGroup">
+<label>Annual SIP Top-up (%)</label>
+<input type="number" id="calcTopup" value="10" min="0">
+</div>
+
+<div class="form-group">
+<label>Expected Annual Return (%)</label>
+<input type="number" id="calcRate" value="12" min="0" step="0.1">
+</div>
+
+<div class="form-group">
+<label>Investment Period (Years)</label>
+<input type="number" id="calcYears" value="10" min="1">
+</div>
+
+<div class="form-group" id="targetGroup" style="display:none;">
+<label>Target Goal Amount (₹)</label>
+<input type="number" id="calcTarget" value="1000000" min="1">
+</div>
+
+<button class="btn btn-orange" style="width:100%;" onclick="calculateInvestment()">
+Calculate Now
+</button>
+
+<div class="result" id="calcResult" style="display:none;"></div>
+
+<p class="small-note">
+This calculator provides mathematical illustrations only. Actual investment returns
+are market-linked and may differ. Taxes, charges and other factors are not included.
+Past performance does not guarantee future returns.
+</p>
+
+</div>
+</div>
+
+
+<!-- ================= MUTUAL FUND MODAL ================= -->
+
+<div class="modal" id="mfModal">
+<div class="modal-box">
+
+<span class="modal-close" onclick="closeModal('mfModal')">×</span>
+
+<h2>Mutual Fund & SIP Enquiry</h2>
+<p class="modal-sub">Tell us about your investment requirement.</p>
+
+<form onsubmit="sendWhatsApp(event,'Mutual Fund & SIP Enquiry')">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Name *</label>
+<input required name="Name">
+</div>
+
+<div class="form-group">
+<label>Mobile *</label>
+<input required name="Mobile" type="tel">
+</div>
+
+<div class="form-group">
+<label>Purpose</label>
+<select name="Purpose">
+<option>Retirement Corpus</option>
+<option>Children Education</option>
+<option>Wealth Creation</option>
+<option>Home Purchase</option>
+<option>Children Marriage</option>
+<option>Tax Planning</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Investment Horizon</label>
+<input name="Horizon" placeholder="Example: 10 Years">
+</div>
+
+<div class="form-group">
+<label>Target Corpus</label>
+<input name="Target Corpus" placeholder="₹">
+</div>
+
+<div class="form-group">
+<label>Existing SIP</label>
+<input name="Existing SIP" placeholder="₹ per month">
+</div>
+
+<div class="form-group">
+<label>Current Investment</label>
+<input name="Current Investment" placeholder="₹">
+</div>
+
+<div class="form-group full">
+<label>Message</label>
+<textarea name="Message"></textarea>
+</div>
+
+</div>
+
+<button class="btn btn-green" style="width:100%;">
+Submit & WhatsApp →
+</button>
+
+</form>
+
+<p class="small-note">
+WhatsApp will open with your enquiry already prepared. Please tap Send.
+</p>
+
+</div>
+</div>
+
+
+<!-- ================= HEALTH MODAL ================= -->
+
+<div class="modal" id="healthModal">
+<div class="modal-box">
+
+<span class="modal-close" onclick="closeModal('healthModal')">×</span>
+
+<h2>Health Insurance Enquiry</h2>
+<p class="modal-sub">Share your basic requirements.</p>
+
+<form onsubmit="sendWhatsApp(event,'Health Insurance Enquiry')">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Name *</label>
+<input required name="Name">
+</div>
+
+<div class="form-group">
+<label>Mobile *</label>
+<input required name="Mobile" type="tel">
+</div>
+
+<div class="form-group">
+<label>Cover For</label>
+<select name="Cover For">
+<option>Self</option>
+<option>Family</option>
+<option>Parents</option>
+<option>Self + Family</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Number of Members</label>
+<input name="Members" type="number">
+</div>
+
+<div class="form-group">
+<label>Required Cover</label>
+<input name="Required Cover" placeholder="Example: ₹10 Lakh">
+</div>
+
+<div class="form-group">
+<label>Existing Policy?</label>
+<select name="Existing Policy">
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Current Insurer</label>
+<input name="Insurer">
+</div>
+
+<div class="form-group">
+<label>City</label>
+<input name="City">
+</div>
+
+<div class="form-group full">
+<label>Message</label>
+<textarea name="Message"></textarea>
+</div>
+
+</div>
+
+<button class="btn btn-green" style="width:100%;">
+Submit & WhatsApp →
+</button>
+
+</form>
+
+</div>
+</div>
+
+
+<!-- ================= MOTOR MODAL ================= -->
+
+<div class="modal" id="motorModal">
+<div class="modal-box">
+
+<span class="modal-close" onclick="closeModal('motorModal')">×</span>
+
+<h2>Motor Insurance Enquiry</h2>
+<p class="modal-sub">Share your vehicle details for assistance.</p>
+
+<form onsubmit="sendWhatsApp(event,'Motor Insurance Enquiry')">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Name *</label>
+<input required name="Name">
+</div>
+
+<div class="form-group">
+<label>Mobile *</label>
+<input required name="Mobile" type="tel">
+</div>
+
+<div class="form-group">
+<label>Vehicle Type</label>
+<select name="Vehicle Type">
+<option>Car</option>
+<option>Two Wheeler</option>
+<option>Commercial Vehicle</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Registration Number</label>
+<input name="Registration Number" placeholder="GJ01AB1234">
+</div>
+
+<div class="form-group">
+<label>Renewal Date</label>
+<input name="Renewal Date" type="date">
+</div>
+
+<div class="form-group">
+<label>Current Insurer</label>
+<input name="Insurer">
+</div>
+
+<div class="form-group">
+<label>Policy Type</label>
+<select name="Policy Type">
+<option>Comprehensive</option>
+<option>Third Party</option>
+<option>OD + TP</option>
+<option>Not Sure</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Previous Claim?</label>
+<select name="Previous Claim">
+<option>No</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div class="form-group full">
+<label>Message</label>
+<textarea name="Message"></textarea>
+</div>
+
+</div>
+
+<button class="btn btn-green" style="width:100%;">
+Submit & WhatsApp →
+</button>
+
+</form>
+
+</div>
+</div>
+
+
+<!-- ================= LIFE MODAL ================= -->
+
+<div class="modal" id="lifeModal">
+<div class="modal-box">
+
+<span class="modal-close" onclick="closeModal('lifeModal')">×</span>
+
+<h2>Life & Term Insurance Enquiry</h2>
+
+<form onsubmit="sendWhatsApp(event,'Life & Term Insurance Enquiry')">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Name *</label>
+<input required name="Name">
+</div>
+
+<div class="form-group">
+<label>Mobile *</label>
+<input required name="Mobile" type="tel">
+</div>
+
+<div class="form-group">
+<label>Age</label>
+<input name="Age" type="number">
+</div>
+
+<div class="form-group">
+<label>Occupation</label>
+<input name="Occupation">
+</div>
+
+<div class="form-group">
+<label>Annual Income</label>
+<input name="Annual Income">
+</div>
+
+<div class="form-group">
+<label>Required Cover</label>
+<input name="Required Cover">
+</div>
+
+<div class="form-group">
+<label>Purpose</label>
+<select name="Purpose">
+<option>Family Protection</option>
+<option>Income Protection</option>
+<option>Children Education</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Smoking</label>
+<select name="Smoking">
+<option>No</option>
+<option>Yes</option>
+</select>
+</div>
+
+<div class="form-group full">
+<label>Message</label>
+<textarea name="Message"></textarea>
+</div>
+
+</div>
+
+<button class="btn btn-green" style="width:100%;">
+Submit & WhatsApp →
+</button>
+
+</form>
+
+</div>
+</div>
+
+
+<!-- ================= GOAL MODAL ================= -->
+
+<div class="modal" id="goalModal">
+<div class="modal-box">
+
+<span class="modal-close" onclick="closeModal('goalModal')">×</span>
+
+<h2>Financial Goal Planning</h2>
+
+<form onsubmit="sendWhatsApp(event,'Financial Goal Planning Enquiry')">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Name *</label>
+<input required name="Name">
+</div>
+
+<div class="form-group">
+<label>Mobile *</label>
+<input required name="Mobile" type="tel">
+</div>
+
+<div class="form-group">
+<label>Goal</label>
+<select name="Goal">
+<option>Retirement</option>
+<option>Children Education</option>
+<option>Children Marriage</option>
+<option>Home Purchase</option>
+<option>Wealth Creation</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Horizon</label>
+<input name="Horizon" placeholder="Example: 15 Years">
+</div>
+
+<div class="form-group">
+<label>Target Amount</label>
+<input name="Target Amount">
+</div>
+
+<div class="form-group">
+<label>Current Investment</label>
+<input name="Current Investment">
+</div>
+
+<div class="form-group">
+<label>Monthly SIP</label>
+<input name="Monthly SIP">
+</div>
+
+<div class="form-group full">
+<label>Message</label>
+<textarea name="Message"></textarea>
+</div>
+
+</div>
+
+<button class="btn btn-green" style="width:100%;">
+Submit & WhatsApp →
+</button>
+
+</form>
+
+</div>
+</div>
+
+
+<!-- ================= IPO MODAL ================= -->
+
+<div class="modal" id="ipoModal">
+<div class="modal-box">
+
+<span class="modal-close" onclick="closeModal('ipoModal')">×</span>
+
+<h2>IPO & Market Information</h2>
+
+<form onsubmit="sendWhatsApp(event,'IPO & Market Information Enquiry')">
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Name *</label>
+<input required name="Name">
+</div>
+
+<div class="form-group">
+<label>Mobile *</label>
+<input required name="Mobile" type="tel">
+</div>
+
+<div class="form-group full">
+<label>Request Type</label>
+<select name="Request Type">
+<option>IPO Information</option>
+<option>Market Information</option>
+<option>Investment Awareness</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group full">
+<label>Your Question</label>
+<textarea name="Question"></textarea>
+</div>
+
+</div>
+
+<button class="btn btn-green" style="width:100%;">
+Submit & WhatsApp →
+</button>
+
+</form>
+
+</div>
+</div>
+
+
 <script>
-function money(n){
-  return "₹" + Math.round(n).toLocaleString("en-IN");
+
+/* ================= MENU ================= */
+
+function toggleMenu(){
+  document.getElementById("mainNav").classList.toggle("open");
 }
-function fvSIP(pmt, years, annualRate){
-  const n=years*12, r=annualRate/100/12;
-  if(r===0) return pmt*n;
-  return pmt*((Math.pow(1+r,n)-1)/r)*(1+r);
+
+function closeMenu(){
+  document.getElementById("mainNav").classList.remove("open");
 }
-function fvLump(pmt, years, annualRate){
-  return pmt*Math.pow(1+annualRate/100,years);
+
+
+/* ================= MODALS ================= */
+
+function openModal(id){
+  document.getElementById(id).classList.add("show");
+  document.body.style.overflow="hidden";
 }
-function goalSIP(){
-  const goal=+document.getElementById("goal").value||0;
-  const years=+document.getElementById("goalYears").value||0;
-  const rate=+document.getElementById("goalRate").value||0;
-  const current=+document.getElementById("goalCurrent").value||0;
-  const futureCurrent=fvLump(current,years,rate);
-  const required=Math.max(0,goal-futureCurrent);
-  const n=years*12, r=rate/100/12;
-  let sip=0;
-  if(n>0) sip = r===0 ? required/n : required*r/((Math.pow(1+r,n)-1)*(1+r));
-  document.getElementById("goalResult").innerHTML=`Required Monthly SIP: <strong>${money(sip)}</strong><div>Target: ${money(goal)} • Current savings future value: ${money(futureCurrent)}</div>`;
+
+function closeModal(id){
+  document.getElementById(id).classList.remove("show");
+  document.body.style.overflow="";
 }
-function simpleSIP(){
-  const sip=+document.getElementById("sip").value||0;
-  const years=+document.getElementById("sipYears").value||0;
-  const rate=+document.getElementById("sipRate").value||0;
-  const invested=sip*years*12;
-  const value=fvSIP(sip,years,rate);
-  document.getElementById("sipResult").innerHTML=`Estimated Future Value: <strong>${money(value)}</strong><div>Total invested: ${money(invested)} • Estimated growth: ${money(value-invested)}</div>`;
-}
-function mixCalc(){
-  const lump=+document.getElementById("lump").value||0;
-  const sip=+document.getElementById("mixSip").value||0;
-  const years=+document.getElementById("mixYears").value||0;
-  const rate=+document.getElementById("mixRate").value||0;
-  const invested=lump+sip*years*12;
-  const value=fvLump(lump,years,rate)+fvSIP(sip,years,rate);
-  document.getElementById("mixResult").innerHTML=`Estimated Future Value: <strong>${money(value)}</strong><div>Total invested: ${money(invested)} • Estimated growth: ${money(value-invested)}</div>`;
-}
-function topUpCalc(){
-  const lump=+document.getElementById("topLump").value||0;
-  const startSip=+document.getElementById("topSip").value||0;
-  const years=+document.getElementById("topYears").value||0;
-  const rate=+document.getElementById("topRate").value||0;
-  const top=+document.getElementById("topUp").value||0;
-  const monthlyRate=rate/100/12;
-  let balance=fvLump(lump,years,rate), invested=lump, sip=startSip;
-  for(let y=1;y<=years;y++){
-    for(let m=0;m<12;m++){
-      balance=balance*(1+monthlyRate)+sip;
-      invested+=sip;
-    }
-    sip*=1+top/100;
+
+window.onclick=function(e){
+  if(e.target.classList.contains("modal")){
+    e.target.classList.remove("show");
+    document.body.style.overflow="";
   }
-  document.getElementById("topResult").innerHTML=`Estimated Future Value: <strong>${money(balance)}</strong><div>Total invested: ${money(invested)} • Estimated growth: ${money(balance-invested)}</div>`;
+};
+
+
+/* ================= CALCULATOR ================= */
+
+let currentCalc="sip";
+
+function openCalc(type){
+
+  currentCalc=type;
+
+  document.getElementById("calculatorModal").classList.add("show");
+  document.body.style.overflow="hidden";
+
+  document.getElementById("calcResult").style.display="none";
+
+  const lumpsum=document.getElementById("lumpsumGroup");
+  const topup=document.getElementById("topupGroup");
+  const target=document.getElementById("targetGroup");
+
+  lumpsum.style.display="none";
+  topup.style.display="none";
+  target.style.display="none";
+
+  if(type==="sip"){
+    document.getElementById("calcTitle").innerText="Simple SIP Calculator";
+    document.getElementById("calcDescription").innerText=
+      "Calculate the estimated future value of a monthly SIP.";
+  }
+
+  if(type==="combo"){
+    document.getElementById("calcTitle").innerText="SIP + Lumpsum Calculator";
+    document.getElementById("calcDescription").innerText=
+      "Calculate SIP and initial lumpsum together.";
+    lumpsum.style.display="block";
+  }
+
+  if(type==="topup"){
+    document.getElementById("calcTitle").innerText=
+      "SIP + Lumpsum + Top-up SIP Calculator";
+    document.getElementById("calcDescription").innerText=
+      "Calculate investment with annual SIP increase.";
+    lumpsum.style.display="block";
+    topup.style.display="block";
+  }
+
+  if(type==="goal"){
+    document.getElementById("calcTitle").innerText=
+      "Goal-Based SIP Calculator";
+    document.getElementById("calcDescription").innerText=
+      "Calculate the approximate monthly SIP required for your goal.";
+    target.style.display="block";
+  }
 }
-document.getElementById("year").textContent=new Date().getFullYear();
+
+
+function calculateInvestment(){
+
+  let sip=parseFloat(document.getElementById("calcSip").value)||0;
+  let lumpsum=parseFloat(document.getElementById("calcLumpsum").value)||0;
+  let rate=parseFloat(document.getElementById("calcRate").value)||0;
+  let years=parseInt(document.getElementById("calcYears").value)||0;
+  let topup=parseFloat(document.getElementById("calcTopup").value)||0;
+  let target=parseFloat(document.getElementById("calcTarget").value)||0;
+
+  let monthlyRate=rate/100/12;
+  let months=years*12;
+
+  let future=0;
+  let invested=0;
+
+  if(currentCalc==="sip"){
+
+    if(monthlyRate===0){
+      future=sip*months;
+    }else{
+      future=sip*((Math.pow(1+monthlyRate,months)-1)/monthlyRate)*(1+monthlyRate);
+    }
+
+    invested=sip*months;
+  }
+
+  if(currentCalc==="combo"){
+
+    if(monthlyRate===0){
+      future=(sip*months)+lumpsum;
+    }else{
+      future=sip*((Math.pow(1+monthlyRate,months)-1)/monthlyRate)*(1+monthlyRate)
+      + lumpsum*Math.pow(1+monthlyRate,months);
+    }
+
+    invested=(sip*months)+lumpsum;
+  }
+
+  if(currentCalc==="topup"){
+
+    let annualSip=sip;
+
+    for(let y=1;y<=years;y++){
+
+      let yearlySIP=annualSip;
+
+      for(let m=1;m<=12;m++){
+
+        if(monthlyRate===0){
+          future+=yearlySIP;
+        }else{
+          future+=yearlySIP*Math.pow(1+monthlyRate,(years-y)*12+(12-m+1));
+        }
+
+        invested+=yearlySIP;
+      }
+
+      annualSip=annualSip*(1+topup/100);
+    }
+
+    if(lumpsum>0){
+      if(monthlyRate===0){
+        future+=lumpsum;
+      }else{
+        future+=lumpsum*Math.pow(1+monthlyRate,months);
+      }
+
+      invested+=lumpsum;
+    }
+  }
+
+  if(currentCalc==="goal"){
+
+    if(target<=0 || years<=0){
+      alert("Please enter a valid target amount and period.");
+      return;
+    }
+
+    if(monthlyRate===0){
+      sip=target/months;
+    }else{
+      sip=target/
+      (((Math.pow(1+monthlyRate,months)-1)/monthlyRate)*(1+monthlyRate));
+    }
+
+    invested=sip*months;
+    future=target;
+  }
+
+  let gains=future-invested;
+
+  document.getElementById("calcResult").style.display="block";
+
+  document.getElementById("calcResult").innerHTML=`
+    <div>Estimated Future Value</div>
+    <strong>₹${formatNumber(future)}</strong>
+    <br><br>
+    <div>Approx. Total Investment</div>
+    <strong>₹${formatNumber(invested)}</strong>
+    <br><br>
+    <div>Approx. Gain</div>
+    <strong>₹${formatNumber(gains)}</strong>
+    ${currentCalc==="goal" ? `
+      <br><br>
+      <div>Required Monthly SIP</div>
+      <strong>₹${formatNumber(sip)}</strong>
+    ` : ""}
+  `;
+}
+
+
+function formatNumber(num){
+
+  if(!isFinite(num)) return "0";
+
+  return Math.round(num).toLocaleString("en-IN");
+}
+
+
+/* ================= WHATSAPP FORMS ================= */
+
+function sendWhatsApp(event,title){
+
+  event.preventDefault();
+
+  const form=event.target;
+  const data=new FormData(form);
+
+  let message=
+`🔔 NEW J&D INVESTMENT CENTRE ENQUIRY
+
+Service: ${title}
+
+`;
+
+  for(let [key,value] of data.entries()){
+
+    if(value && String(value).trim()!==""){
+      message += `${key}: ${value}\n`;
+    }
+
+  }
+
+  message += `
+--------------------------------
+J&D Investment Centre
+Dipesh Patel
+📞 96245 50101
+--------------------------------
+`;
+
+  const url=
+    "https://wa.me/919624550101?text="
+    +encodeURIComponent(message);
+
+  window.open(url,"_blank");
+
+  setTimeout(function(){
+    form.reset();
+  },500);
+}
+
 </script>
+
 </body>
 </html>
